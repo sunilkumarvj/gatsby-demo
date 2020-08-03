@@ -60,7 +60,7 @@ const ProdPage = ({data}) => (   //here we are going to get data
            <img className="imgbeers" src={project.image.asset.url} alt={project.title}></img>
            <div className="bttn"> <button  className="buy-button snipcart-add-item" data-item-id={project._id} 
                                    data-item-price={project.price} 
-                                   
+                                   onClick={()=>alert("added to the cart")}
                                    data-item-name={project.title} 
                                    data-item-image={project.image.asset.url}
                                    data-item-description={project.description}
